@@ -3,7 +3,7 @@
 /*** 
  * `quotes` array 
 ***/
-let qoutes = [
+let quotes = [
 	{
 		quote: '“The Best Way To Get Started Is To Quit Talking And Begin Doing.”',
 		source: 'Walt Disney'
@@ -27,7 +27,7 @@ let qoutes = [
 	{
 		quote: '“Don’t spend time beating on a wall, hoping to transform it into a door.”',
 		source: 'Coco Chanel',
-		AuthorProfession: 'Designer' //additonal property
+		AuthorProfession: 'Designer' //additional property
 	},
 	{
 		quote: '“Creativity is intelligence having fun.”',
@@ -44,7 +44,7 @@ let qoutes = [
 	{
 		quote: '“Every great developer you know got there by solving problems they were unqualified to solve until they actually did it.”',
 		source: 'Patrick McKenzie',
-		citaion: 'Twitter',
+		citation: 'Twitter',
 		year: 2016
 		
 	}
@@ -75,9 +75,9 @@ function getRandomColor (array) {
  * `printQuote` function
 ***/
 function printQuote () {
-	let quote = getRandomQuote(qoutes);
+	let quote = getRandomQuote(quotes);
 	let color = getRandomColor(colors);
-	let citation = quote.citaion;
+	let citation = quote.citation;
 	let year = quote.year;
 	let AuthorProfession = quote.AuthorProfession;
 	let quoteBox = document.getElementById('quote-box');
